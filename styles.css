@@ -1,0 +1,1313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+body {
+    
+    background: #26293c;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+    
+    
+a {
+    
+    color: #17b451; 
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+    height: 5%;
+    padding: 5px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-bottom: 2px solid #26293c;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.nav ul li {
+  display: inline-flex;
+  position: relative;
+  top: 20%;
+  justify-content: space-around;
+  left: -20%;
+  
+  
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #26293c;
+  font-size: 18px;
+  top: 0;  
+}
+
+.nav ul li a:hover {
+    color: #17B451;
+}
+
+
+
+/*------------------Hero------------------*/
+
+
+
+#logo {
+    display: inline-flex;
+    position: fixed;
+    top: -0.5%;
+    height: 6%;
+    width: 3%;
+    z-index: 4;
+}
+
+.hero {
+    
+    width: 100%;
+}
+
+#arrow {
+    
+    display: inline-block;
+    position: absolute;
+    height: 170vh;
+    width: 100vw;
+    left: 1%;
+    top: 12%;
+    z-index: 2;
+    
+}
+
+#arrow3 {
+    
+    display: inline-block;
+    position: absolute;
+    height: 170vh;
+    width: 100vw;
+    left: 1%;
+    top: 12%;
+    opacity: 0%;
+    z-index: 2;
+    
+}
+
+#arrow:hover {
+    
+    transition: 3s;
+    opacity: 0%;
+}
+
+#arrow3:hover {
+    
+    transition: 3s;
+    opacity: 100%;
+}
+
+.hero img {
+     display: block;
+     margin: 0px auto;
+     z-index: -1;
+     
+}
+
+.intro {
+    
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 19%;
+    font-size: 4.5em;  
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.intro #onboard {
+    
+    color: #17B451;
+    
+} 
+
+.intro #needs {
+    
+    font-size: 1em;
+}
+
+
+
+
+/* ------------Marketing--------------*/
+
+
+
+
+.marketing {
+  background-color: #26293c;
+}
+
+#back-box {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 75.7%;
+  left: 0.02%;
+  margin: 0px auto;
+  color: #26293c;
+
+}
+
+#back-box #box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+.marketing #back-box h1 {
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  top: 1%;
+  left: 42%;
+  font-size: 2.3em;
+}
+
+#mark-hr {
+  display: block;
+  position: relative;
+  width: 90%;
+  top: 10%;
+  margin: 0px auto;
+}
+
+.green-text h2 {
+    
+  position: relative;
+  margin-bottom: 5px;
+  color: #17B451;
+  left: 20%;
+}
+
+.green-text span {
+    
+  position: relative;
+  margin-bottom: 20px;
+  color: #26293c;
+  font-size: 1.5em;
+  left: 5%;
+}
+
+#box-text ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #26293c;
+    
+}
+
+#box-text ul li {
+  
+  position: relative;
+  text-align: left;
+  left: -5%;    
+  margin-bottom: 10px;
+}
+
+#box-text ul li .tri {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.tri {
+    
+      color: #17b451;
+
+}
+
+#M-POA {
+    
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+    top: 1%;
+    left: 38%;
+    font-size: 1.5em;
+}
+
+
+.wrapper {
+    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collapsible {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.collapsible input {
+    
+    display: none;
+}
+
+.collapsible label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #26293c;
+    color: #17b451;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.collapsible label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.collapsible input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #ffffff;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #26293c;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.collapsible-text h2 {
+    
+    margin-bottom: 10px;
+    padding: 15px; 15px 0;
+    font-size: 1.2em;
+    color: #ffffff;;
+    
+}
+
+
+.collapsible-text p {
+    
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 1px;
+}
+
+.tri2 {
+    
+    color: #17b451;
+    display: inline-block;
+}
+
+.collapsible-text p.tri2 {
+    
+    display: inline-block;
+    color: #17b451;
+    padding-right: 0px;
+}
+
+
+
+/*-------collapsible5 because I dunno----*/
+
+
+
+.collapsible5 {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.collapsible5 input {
+    
+    display: none;
+}
+
+.collapsible5 label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #17B451;
+    color: #26293C;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.collapsible5 label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.collapsible5 input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #26293C;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.collapsible5 input:checked ~ .collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #17B451;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.collapsible5 img {
+    
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    left: 35%;
+}
+
+
+
+/*--------------- R-Section ----------*/
+
+
+.r-section {
+    
+    width: 100%;
+    
+}
+
+.r-section img {
+    
+     display: block;
+     margin: 0px auto;
+     z-index: -1;
+     overflow: hidden;
+     
+}
+
+#arrow-r {
+    
+    display: inline-block;
+    position: absolute;
+    height: 215vh;
+    width: 100vw;
+    left: 10%;
+    top: 182%;
+    z-index: 1;
+    
+}
+
+#arrow-r3 {
+    
+    display: inline-block;
+    position: absolute;
+    height: 215vh;
+    width: 100vw;
+    left: 10%;
+    top: 182%;
+    opacity: 0%;
+    z-index: 1;
+    
+}
+
+#arrow-r:hover {
+    
+    transition: 3s;
+    opacity: 0%;
+}
+
+#arrow-r3:hover {
+    
+    transition: 3s;
+    opacity: 100%;
+}
+
+
+/* ------------Sales--------------*/
+
+
+
+
+.sales {
+  background-color: #26293c;
+}
+
+#sales-back-box {
+  display: block;
+  position: relative;
+  background-color: #26293c;
+  width: 75.5%;
+  left: 0;
+  margin: 0px auto;
+  color: #ffffff;
+
+}
+
+#sales-back-box #sales-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+.sales #sales-back-box h1 {
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  top: 1%;
+  left: 42%;
+  font-size: 2.3em;
+}
+
+#sales-hr {
+  display: block;
+  position: relative;
+  width: 90%;
+  top: 10%;
+  margin: 0px auto;
+}
+
+.sales-green-text h2 {
+    
+  position: relative;
+  margin-bottom: 5px;
+  color: #17B451;
+  left: 20%;
+}
+
+.sales-green-text span {
+    
+  position: relative;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.5em;
+  left: 5%;
+}
+
+#sales-box-text ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #ffffff;
+    
+}
+
+#sales-box-text ul li {
+  
+  position: relative;
+  text-align: left;
+  left: -5%;    
+  margin-bottom: 10px;
+}
+
+#sales-box-text ul li .tri {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.tri {
+    
+      color: #17b451;
+
+}
+
+#S-POA {
+    
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+    top: 1%;
+    left: 38%;
+    font-size: 1.5em;
+}
+
+
+.s-wrapper {
+    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sales-collapsible {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.sales-collapsible input {
+    
+    display: none;
+}
+
+.sales-collapsible label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #ffffff;
+    color: #17b451;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.sales-collapsible label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.sales-collapsible input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.sales-collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #26293c;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.sales-collapsible input:checked ~ .sales-collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #ffffff;
+    color: #26293c;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.sales-collapsible-text h2 {
+    
+    margin-bottom: 10px;
+    padding: 15px; 15px 0;
+    font-size: 1.2em;
+    color: #26293c;
+    
+}
+
+
+.sales-collapsible-text p {
+    
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 1px;
+}
+
+.tri2 {
+    
+    color: #17b451;
+    display: inline-block;
+}
+
+.sales-collapsible-text p.tri2 {
+    
+    display: inline-block;
+    color: #17b451;
+    padding-right: 0px;
+}
+
+
+
+/*-------sales collapsible5 because I dunno----*/
+
+
+
+.sales-collapsible5 {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.sales-collapsible5 input {
+    
+    display: none;
+}
+
+.sales-collapsible5 label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #17B451;
+    color: #26293C;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.sales-collapsible5 label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.sales-collapsible5 input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.sales-collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #26293C;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.sales-collapsible5 input:checked ~ .sales-collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #17B451;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.sales-collapsible5 img {
+    
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    left: 35%;
+}
+
+
+
+
+/*------------Building Section------*/
+
+
+.b-section {
+    
+    width: 100%;
+}
+
+#arrow-b {
+    
+    display: inline-block;
+    position: absolute;
+    height: 240vh;
+    width: 100vw;
+    left: -10%;
+    top: 369%;
+    transform: rotate(-5deg);
+    z-index: 2;
+    
+}
+
+#arrow-b3 {
+    
+    display: inline-block;
+    position: absolute;
+    height: 240vh;
+    width: 100vw;
+    left: -11%;
+    top: 369%;
+    transform: rotate(-5deg);
+    opacity: 0%;
+    z-index: 2;
+    
+}
+
+#arrow-b:hover {
+    
+    transition: 3s;
+    opacity: 0%;
+}
+
+#arrow-b3:hover {
+    
+    transition: 3s;
+    opacity: 100%;
+}
+
+.b-section img {
+     display: block;
+     margin: 0px auto;
+     z-index: -1;
+     
+}
+
+
+
+
+
+/*-----------Service Section-------*/
+
+
+
+
+
+
+.service {
+  background-color: #26293c;
+}
+
+#service-back-box {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 75.7%;
+  left: 0.02%;
+  margin: 0px auto;
+  color: #26293c;
+
+}
+
+#service-back-box #service-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 1.3em;
+  padding: 20px 0;
+}
+
+.service #service-back-box h1 {
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  top: 1%;
+  left: 42%;
+  font-size: 2.3em;
+}
+
+#service-hr {
+  display: block;
+  position: relative;
+  width: 90%;
+  top: 10%;
+  margin: 0px auto;
+}
+
+.service-green-text h2 {
+    
+  position: relative;
+  margin-bottom: 5px;
+  color: #17B451;
+  left: 20%;
+}
+
+.service-green-text span {
+    
+  position: relative;
+  margin-bottom: 20px;
+  color: #26293c;
+  font-size: 1.5em;
+  left: 5%;
+}
+
+#service-box-text ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #26293c;
+    
+}
+
+#service-box-text ul li {
+  
+  position: relative;
+  text-align: left;
+  left: -5%;    
+  margin-bottom: 10px;
+}
+
+#service-box-text ul li .tri {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.tri {
+    
+      color: #17b451;
+
+}
+
+#Serv-POA {
+    
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+    top: 1%;
+    left: 38%;
+    font-size: 1.5em;
+}
+
+
+.wrapper {
+    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-collapsible {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.service-collapsible input {
+    
+    display: none;
+}
+
+.service-collapsible label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #26293c;
+    color: #17b451;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.service-collapsible label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.service-collapsible input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.service-collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #ffffff;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.service-collapsible input:checked ~ .service-collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #26293c;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+    z-index: 4;
+
+}
+
+.service-collapsible-text h2 {
+    
+    margin-bottom: 10px;
+    padding: 15px; 15px 0;
+    font-size: 1.2em;
+    color: #ffffff;;
+    
+}
+
+
+.service-collapsible-text p {
+    
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 1px;
+}
+
+.tri2 {
+    
+    color: #17b451;
+    display: inline-block;
+}
+
+.service-collapsible-text p.tri2 {
+    
+    display: inline-block;
+    color: #17b451;
+    padding-right: 0px;
+}
+
+
+
+/*-------SERVICE collapsible5 because I dunno----*/
+
+
+
+.service-collapsible5 {
+    
+    max-width: 550px;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 500;
+    border-radius: 0px 40px 0px 0px;
+    
+}
+
+.service-collapsible5 input {
+    
+    display: none;
+}
+
+.service-collapsible5 label {
+    
+    position: relative;
+    font-weight:  600;
+    background: #17B451;
+    color: #26293C;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 40px 0px 0px;
+    z-index: 3;
+    
+}
+
+.service-collapsible5 label:after {
+    
+    content: "▷";
+    position: absolute;
+    right: 15px;
+    top: 15px;    
+    width: 18px;
+    height: 28px;
+    transition: all 0.3s ease;
+
+}
+
+.service-collapsible5 input:checked + label:after {
+    
+    transform: rotate(90deg);
+}
+
+.service-collapsible-text {
+    
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    color: #26293C;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border-radius: 0px 10px 100px 00px;
+
+}
+
+.service-collapsible5 input:checked ~ .service-collapsible-text {
+    
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #17B451;
+    color: #ffffff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+
+}
+
+.service-collapsible5 img {
+    
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    left: 35%;
+}
+
+
+
+/*---------- END SECTION---------*/
+
+
+
+
+.end-section {
+    
+    width: 100%;
+}
+
+#arrow-s {
+    
+    display: inline-block;
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    left: 5%;
+    top: 582%;
+    transform: rotate(-5deg);
+    z-index: 2;
+    
+}
+
+#arrow-s3 {
+    
+    display: inline-block;
+    position: absolute;
+    height: 150vh;
+    width: 100vw;
+    left: 5%;
+    top: 582%;
+    transform: rotate(-5deg);
+    opacity: 0%;
+    z-index: 2;
+    
+}
+
+#arrow-s:hover {
+    
+    transition: 3s;
+    opacity: 0%;
+}
+
+#arrow-s3:hover {
+    
+    transition: 3s;
+    opacity: 100%;
+}
+
+.end-section img {
+     display: block;
+     margin: 0px auto;
+     z-index: -1;
+     
+}
+
+.end-box {
+    
+        display: inline-block;
+        position: absolute;
+        background: #ffffff;
+        color: #26293c;
+        width: 50%;
+        height: 10%;
+        bottom: -617%;
+        left: 25%;
+        border-radius: 50px 50px 0px 0px;
+        text-align: center;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(, 0, 0, .08);
+        z-index: 3;
+}
+
+
+
+.end-box-2 {
+    
+        display: inline-block;
+        position: absolute;
+        background: #ffffff;
+        color: #26293c;
+        width: 50%;
+        height: 10%;
+        bottom: -627.1%;
+        left: 25%;
+        border-radius: 0px 0px 50px 50px;
+        text-align: center;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(, 0, 0, .08);
+        z-index: 3;
+
+}
+
+
+.end-box a, .end-box-2 a {
+    
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.end-box:hover {
+    
+        background: #ffffff;
+        border-radius: 50px 50px 0px 0px;
+        text-align: center;
+        transform: translate(0px, -8px);
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(, 0, 0, .08);
+}
+
+
+.end-box-2:hover {
+    
+        background: #ffffff;
+        border-radius: 0px 0px 50px 50px;
+        text-align: center;
+        transform: translate(0px, 8px);
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(, 0, 0, .08);
+}
+
+.end-box a:hover, .end-box-2 a:hover {
+    
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#copyright {
+    
+    display: inline-block;
+    position: absolute;
+    margin: 0px auto;
+    left: 45%;
+}
